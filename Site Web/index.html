@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de l'oie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="images/RespectOie.png" alt="Logo du jeu de l'oie" style="width: 150px; height: auto;">
+    </div>
+
+    <h1 class="game-title">Jeu de l'oie</h1>
+    <p class="game-purpose">
+        Le but de ce jeu de l'oie est de sensibiliser les utilisateurs aux dangers des réseaux sociaux tout en s'amusant. À travers chaque étape, vous découvrirez des conseils et des solutions pour mieux naviguer dans l'univers numérique de manière responsable.
+    </p>
+
+    <div class="stats-container">
+        <div class="stat-box">
+            <h2 id="percentage1">50%</h2>
+            <p>des utilisateurs ne vérifient pas la source des informations.</p>
+        </div>
+        <div class="stat-box">
+            <h2 id="percentage2">70%</h2>
+            <p>des 16-25 ans passent leurs jours dans les réseaux sociaux.</p>
+        </div>
+        <div class="stat-box">
+            <h2 id="percentage3">20%</h2>
+            <p>des jeunes ont déjà été victimes de cyberharcèlement.</p>
+        </div>
+    </div>
+
+    <div class="questionnaire">
+        <h2>Répondez aux questions suivantes avant de commencer le jeu :</h2>
+        <form id="quizForm">
+            <div class="question">
+                <label>1. Pensez-vous à vérifier la source des informations que vous partagez ?</label><br>
+                <input type="radio" name="cyberharcèlement" value="oui"> Oui<br>
+                <input type="radio" name="cyberharcèlement" value="non"> Non
+            </div>
+            <div class="question">
+                <label>2. Utilisez-vous régulièrement les réseaux sociaux ?</label><br>
+                <input type="radio" name="utilisationRéseaux" value="oui"> Oui<br>
+                <input type="radio" name="utilisationRéseaux" value="non"> Non
+            </div>
+            <div class="question">
+                <label>3. Avez-vous déjà été victime de cyberharcèlement ?</label><br>
+                <input type="radio" name="verification" value="oui"> Oui<br>
+                <input type="radio" name="verification" value="non"> Non
+            </div>
+            <button type="submit">Soumettre</button>
+        </form>
+        
+        <button id="startGame" style="display:none;">Commencer le jeu</button>
+    </div>
+
+    <img id="gameImage" src="images/image.jpg alt="Image de jeu" style="display:none; width: 300px; height: auto;">
+
+    <div class="board" style="display:none;">
+        <!-- Le plateau de jeu sera ici -->
+    </div>
+
+    <p id="gameMessage"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

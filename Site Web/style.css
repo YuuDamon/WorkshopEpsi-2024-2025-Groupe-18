@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligne le contenu en haut */
+    min-height: 100vh; /* Hauteur minimale pour permettre le défilement */
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Style pour le titre */
+.game-title {
+    position: relative; 
+    margin-top: 20px; /* Ajoute un espacement au-dessus */
+    text-align: center;
+    font-size: 2.5em; /* Ajuste la taille du texte si nécessaire */
+    color: #333;
+}
+
+/* Style pour centrer la phrase */
+.game-purpose {
+    position: relative;  
+    text-align: center;
+    font-size: 20px;   
+    font-weight: bold; 
+    color: #e20e0e;       
+    max-width: 1000px; 
+    margin: 20px auto; /* Ajoute un espacement vertical */
+}
+
+/* Plateau de jeu en grille */
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 5px;
+    margin: 20px;
+}
+
+/* Style pour le logo */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo img {
+    width: 150px; /* Ajuste la taille du logo ici */
+    height: auto;
+}
+
+/* Conteneur pour les chiffres inquiétants */
+.stats-container {
+    display: flex; /* Utiliser flexbox pour aligner les cadres */
+    justify-content: center; /* Centrer les cadres */
+    margin-top: 30px; /* Espacement au-dessus des cadres */
+}
+
+/* Style pour chaque cadre */
+.stat-box {
+    background-color: #dee6ee; /* Couleur de fond (rouge clair) */
+    border: 1px solid #b6c6d6; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    width: 150px; /* Largeur des cadres */
+    margin: 0 10px; /* Marge entre les cadres */
+    padding: 20px; /* Espacement intérieur */
+    text-align: center; /* Centrer le texte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+}
+
+/* Style pour le titre des chiffres */
+.stat-box h2 {
+    font-size: 2.5em; /* Taille du nombre */
+    margin: 0; /* Supprimer la marge */
+    color: #3b52a3; /* Couleur du texte */
+}
+
+/* Style pour le texte sous les chiffres */
+.stat-box p {
+    font-size: 1em; /* Taille du texte */
+    color: #6ea4db; /* Couleur du texte */
+}
+
+/* Style pour le questionnaire */
+.questionnaire {
+    text-align: center;
+    margin: 20px 0;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+/* Style pour le bouton "Commencer le jeu" */
+#startGame {
+    padding: 10px 20px; /* Espacement intérieur */
+    font-size: 18px; /* Taille de police */
+    background-color: #3b52a3; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur en main au survol */
+    margin-top: 20px; /* Marge au-dessus */
+    display: none; /* Masqué par défaut */
+    transition: background-color 0.3s; /* Transition pour la couleur de fond */
+}
+
+/* Effet au survol du bouton */
+#startGame:hover {
+    background-color: #2a3d73; /* Couleur de fond plus foncée au survol */
+}   
