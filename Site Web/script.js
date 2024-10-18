@@ -13,7 +13,7 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
     let percentage3 = 20; // Valeur par défaut pour le cyberharcèlement
 
     // Logique pour ajuster les pourcentages
-    if (verification === "non") {
+    if (verification === "oui") {
         percentage1 += 10; // Augmente le pourcentage de ceux qui vérifient
     }
     if (utilisationRéseaux === "oui") {
@@ -21,6 +21,17 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
     }
     if (cyberharcelement === "oui") {
         percentage3 += 10; // Augmente le pourcentage de ceux qui ont été victimes de cyberharcèlement
+    }
+
+     // Logique pour ajuster les pourcentages
+     if (verification === "non") {
+        percentage1 -= 10; // Augmente le pourcentage de ceux qui vérifient
+    }
+    if (utilisationRéseaux === "non") {
+        percentage2 -= 5; // Augmente le pourcentage d'utilisation des réseaux sociaux
+    }
+    if (cyberharcelement === "non") {
+        percentage3 -= 5; // Augmente le pourcentage de ceux qui ont été victimes de cyberharcèlement
     }
 
     // Met à jour les pourcentages dans le DOM
